@@ -91,6 +91,7 @@ Model information without yolact inference by directly using groundtruth from th
 # Instructions for use
 
 **Training commands**
+
 Command for training without yolact object detection model:
 
 ```
@@ -106,6 +107,7 @@ python  training.py --dataset=./data/train.json --trained_model=./yolact/weights
 Where "model_name" is GCN, GIN or GINLAF. You can adjust nb_label and hidden_channel parameters
 
 **Evaluation commands**
+
 Command for evaluation without yolact object detection model:
 
 ```
@@ -119,6 +121,7 @@ python  ./evaluation.py --dataset=./data/train.json --trained_model=./yolact/wei
 ```
 
 **Inference commands**
+
 Command for evaluation without yolact object detection model:
 
 ```
