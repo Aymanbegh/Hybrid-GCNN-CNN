@@ -82,7 +82,7 @@ where instruction is one of the following command:
 Model information without yolact inference by directly using groundtruth from the cd-coco dataset (bounding boxes and labels):
 
 |Model| Hidden layer size  | Inference speed (ms) | Precision | 
-| ------ | :------: | :------: | :------: | :------: | 
+| ------ | :------: | :------: | :------: | 
 | **GCN** | 1024 | 0.470 | 88.9% |
 | **GIN** | 1024 | 0.123 | 90.6% | 
 | **GINLAF** | 32 | 0.110 | 92.0% | 
