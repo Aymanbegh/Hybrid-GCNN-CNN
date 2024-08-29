@@ -58,6 +58,16 @@ To install the Hybrid-GCNN-CNN framework, follow the instruction below:
 pip install -r requirements.txt
       ```
 
+To download the Hybrid-GCNN-CNN data and weights, follow the instruction below:
+      ```
+python installation.py {instruction}
+      ```
+
+where instruction is one of the following command:
+- all_distorted: download the Hybrid-GCNN-CNN weights, the yolact wieghts, train.json, the training cd-coco distorted images
+- all_normal: download the Hybrid-GCNN-CNN weights, the yolact weights, train.json, the train ms-coco original images
+- weight: download the Hybrid-GCNN-CNN weights, the yolact weights
+
 
 # Method
 
