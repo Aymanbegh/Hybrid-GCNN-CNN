@@ -90,6 +90,47 @@ Model information without yolact inference by directly using groundtruth from th
 
 # Instructions for use
 
+**Training commands**
+Command for training without yolact object detection model:
+
+```
+python  training.py --dataset=./data/train.json --file_res="./datat/trainings.txt" --nb_label=1 --model="model_name" --hidden_channel= 1024
+```
+
+Command for training with yolact object detection model:
+
+```
+python  training.py --dataset=./data/train.json --trained_model=./yolact/weights/yolact_im700_54_800000.pth --score_threshold=0.15 --top_k=15 --image_dir="./data/train2017_distorted/" --file_res="./datat/trainings.txt" --nb_label=1 --model="model_name" --hidden_channel= 1024
+```
+
+Where "model_name" is GCN, GIN or GINLAF. You can adjust nb_label and hidden_channel parameters
+
+**Evaluation commands**
+Command for evaluation without yolact object detection model:
+
+```
+python  ./evaluation.py --dataset=./data/train.json --file_res="./datat/trainings.txt" --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden_channel= 1024
+```
+
+Command for training with yolact object detection model:
+
+```
+python  ./evaluation.py --dataset=./data/train.json --trained_model=./yolact/weights/yolact_im700_54_800000.pth --score_threshold=0.15 --top_k=15 --image_dir="./data/train2017_distorted/" --file_res="./datat/trainings.txt" --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden_channel= 1024
+```
+
+**Inference commands**
+Command for evaluation without yolact object detection model:
+
+```
+python  ./inference.py --image_dir="./data/train2017_distorted/" --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden_channel= 1024
+```
+
+Command for training with yolact object detection model:
+
+```
+python  ./evaluation.py --trained_model=./yolact/weights/yolact_im700_54_800000.pth --score_threshold=0.15 --top_k=15 --image_dir="./data/train2017_distorted/"  --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden_channel= 1024
+
+
 # Citation
 **CD-COCO: A versatile complex distorted coco database for scene-context-aware computer vision**
 ```
