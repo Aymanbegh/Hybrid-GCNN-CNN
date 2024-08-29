@@ -133,6 +133,7 @@ Command for training with yolact object detection model:
 ```
 python  ./evaluation.py --trained_model=./yolact/weights/yolact_im700_54_800000.pth --score_threshold=0.15 --top_k=15 --image_dir="./data/train2017_distorted/"  --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden_channel= 1024
 
+```
 
 # Citation
 **CD-COCO: A versatile complex distorted coco database for scene-context-aware computer vision**
