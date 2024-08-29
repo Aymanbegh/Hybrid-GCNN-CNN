@@ -24,8 +24,11 @@ To train or test on CD-COCO, you'll also need:
 To install the YOLACT framework follow the instructions described on the official page: https://github.com/dbolya/yolact
 
 Clone this repository into the yolact folder and enter it:
+
+```
 cd yolact
 git clone [https://github.com/dbolya/yolact.git](https://github.com/Aymanbegh/Hybrid-GCNN-CNN.git)
+```
 
 To install the Hybrid-GCNN-CNN framework, follow the instruction below:
       ```
