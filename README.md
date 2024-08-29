@@ -42,6 +42,7 @@ pip install -r requirements.txt
 # Instructions for use
 
 # Citation
+**CD-COCO: A versatile complex distorted coco database for scene-context-aware computer vision**
 ```
 @inproceedings{beghdadi2023cd,
   title={Cd-coco: A versatile complex distorted coco database for scene-context-aware computer vision},
@@ -52,6 +53,8 @@ pip install -r requirements.txt
   organization={IEEE}
 }
 ```
+
+**Hybrid-GCNN-CNN: A New Lightweight Hybrid Graph Convolutional Neural Network--CNN Scheme for Scene Classification using Object Detection Inference**
 
 ```
 @article{beghdadi2024new,
