@@ -32,6 +32,7 @@ To install the YOLACT framework follow the instructions described on the officia
 Clone its repository into the Hybrid-GCNN-CNN folder and enter it:
 
 The tree should look like this:
+
       ```
       ├── Hybrid-GCNN-CNN
           └── requirements.txt
