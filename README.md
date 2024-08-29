@@ -27,7 +27,7 @@ Clone this repository into the yolact folder and enter it:
 
 ```
 cd yolact
-git clone [https://github.com/dbolya/yolact.git](https://github.com/Aymanbegh/Hybrid-GCNN-CNN.git)
+git clone https://github.com/Aymanbegh/Hybrid-GCNN-CNN.git
 ```
 
 To install the Hybrid-GCNN-CNN framework, follow the instruction below:
@@ -42,8 +42,7 @@ pip install -r requirements.txt
 # Instructions for use
 
 # Citation
-
-      ```
+```
 @inproceedings{beghdadi2023cd,
   title={Cd-coco: A versatile complex distorted coco database for scene-context-aware computer vision},
   author={Beghdadi, Ayman and Beghdadi, Azeddine and Mallem, Malik and Beji, Lotfi and Cheikh, Faouzi Alaya},
@@ -61,4 +60,4 @@ pip install -r requirements.txt
   journal={arXiv preprint arXiv:2407.14658},
   year={2024}
 }
-      ```
+```
