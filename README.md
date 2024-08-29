@@ -44,6 +44,9 @@ The tree should look like this:
           └── gcn.py
           └── ginlaf.py
           └── weights
+                └── model2_GCN_X2_1.pth
+                └── model2_GIN_X2_1.pth
+                └── model2_GINLAF_X2_1.pth
           └── data
                 └── train.json
                 └── trainings.txt
