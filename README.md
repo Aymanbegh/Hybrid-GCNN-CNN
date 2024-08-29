@@ -71,21 +71,21 @@ python installation.py {instruction}
       ```
 
 where instruction is one of the following command:
-- **all_distorted**: download the Hybrid-GCNN-CNN weights, the yolact wieghts, train.json, the training cd-coco distorted images
-- **all_normal**: download the Hybrid-GCNN-CNN weights, the yolact weights, train.json, the train ms-coco original images
-- **weight**: download the Hybrid-GCNN-CNN weights, the yolact weights
+- **all_distorted**: download the yolact weights, train.json from the cd-coco dataset, the training cd-coco distorted images -> for training or evaluation
+- **all_normal**: download the yolact weights from the cd-coco dataset, train.json, the train ms-coco original images -> for training or evaluation
+- **weight**: download the yolact weights (yolact_im700_54_800000.pth by default) -> for inference
 
 
 # Method
 
 
-Model wieghts:
+Model information without yolact inference by directly using groundtruth from the cd-coco dataset (bounding boxes and labels):
 
-|Model| Hidden layer size  | Inference speed (ms) | Precision | link | 
-| ------ | :------: | :------: | :------: | :------: |  :------: |
-| **GCN** | 1024 | 0.470 | 88.9% | xxx |
-| **GIN** | 1024 | 0.123 | 90.6% | xxx |
-| **GINLAF** | 32 | 0.110 | 92.0% | xxx |
+|Model| Hidden layer size  | Inference speed (ms) | Precision | 
+| ------ | :------: | :------: | :------: | :------: | 
+| **GCN** | 1024 | 0.470 | 88.9% |
+| **GIN** | 1024 | 0.123 | 90.6% | 
+| **GINLAF** | 32 | 0.110 | 92.0% | 
 
 
 # Instructions for use
