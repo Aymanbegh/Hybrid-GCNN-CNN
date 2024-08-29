@@ -21,14 +21,36 @@ To train or test on CD-COCO, you'll also need:
 
 
 # Installation
-To install the YOLACT framework follow the instructions described on the official page: https://github.com/dbolya/yolact
-
-Clone this repository into the yolact folder and enter it:
+Download the Hybrid-GCNN-CNN repository and enter it:
 
 ```
-cd yolact
 git clone https://github.com/Aymanbegh/Hybrid-GCNN-CNN.git
+cd Hybrid-GCNN-CNN
 ```
+
+To install the YOLACT framework follow the instructions described on the official page: https://github.com/dbolya/yolact
+Clone its repository into the Hybrid-GCNN-CNN folder and enter it:
+
+The tree should look like this:
+      ```
+      ├── Hybrid-GCNN-CNN
+          └── requirements.txt
+          └── install.py
+          └── inference.py
+          └── evaluate.py
+          └── train.py
+          └── gin.py
+          └── gcn.py
+          └── ginlaf.py
+          └── weights
+          └── data
+                └── train.json
+                └── trainings.txt
+                └── train2017_distorted
+                └── train2017
+          └── yolact
+            └── yolact tree...              
+         ```  
 
 To install the Hybrid-GCNN-CNN framework, follow the instruction below:
       ```
@@ -37,6 +59,15 @@ pip install -r requirements.txt
 
 
 # Method
+
+
+Model wieghts:
+
+|Model| Hidden layer size  | Inference speed (ms) | link | 
+| ------ | :------: | :------: | :------: | :------: |
+| **GCN** | 1024 | 0.470 | xxx |
+| **GIN** | 1024 | 0.123 | xxx |
+| **GINLAF** | 32 | 0.110 | xxx |
 
 
 # Instructions for use
