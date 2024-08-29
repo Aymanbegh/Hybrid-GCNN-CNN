@@ -9,11 +9,53 @@ The repository includes:
 -  Annotated CD-COCO dataset for training and evaluation
 -  Evaluation on CD-COCO dataset
 
+# Requirements
+
+Python 3.8, PyTorch = torch 2.0.1, torch-geometric-2.5.3 and other common packages listed in requirements.txt.
+
+**CD-COCO Requirements**:
+To train or test on CD-COCO, you'll also need:
+- pycocotools (installation instructions below)
+- CD-COCO Dataset (images, object annotations and scene type groundthruth): https://github.com/Aymanbegh/CD-COCO
+- Scene type groundthruth is contained into the trainings.txt file
+
+
 # Installation
 To install the YOLACT framework follow the instructions described on the official page: https://github.com/dbolya/yolact
+
+Clone this repository into the yolact folder and enter it:
+cd yolact
+git clone [https://github.com/dbolya/yolact.git](https://github.com/Aymanbegh/Hybrid-GCNN-CNN.git)
 
 To install the Hybrid-GCNN-CNN framework, follow the instruction below:
       ```
 pip install -r requirements.txt
       ```
 
+
+# Method
+
+
+# Instructions for use
+
+# Citation
+
+      ```
+@inproceedings{beghdadi2023cd,
+  title={Cd-coco: A versatile complex distorted coco database for scene-context-aware computer vision},
+  author={Beghdadi, Ayman and Beghdadi, Azeddine and Mallem, Malik and Beji, Lotfi and Cheikh, Faouzi Alaya},
+  booktitle={2023 11th European Workshop on Visual Information Processing (EUVIP)},
+  pages={1--6},
+  year={2023},
+  organization={IEEE}
+}
+```
+
+```
+@article{beghdadi2024new,
+  title={A New Lightweight Hybrid Graph Convolutional Neural Network--CNN Scheme for Scene Classification using Object Detection Inference},
+  author={Beghdadi, Ayman and Beghdadi, Azeddine and Ullah, Mohib and Cheikh, Faouzi Alaya and Mallem, Malik},
+  journal={arXiv preprint arXiv:2407.14658},
+  year={2024}
+}
+      ```
