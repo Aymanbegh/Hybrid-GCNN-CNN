@@ -64,9 +64,9 @@ python installation.py {instruction}
       ```
 
 where instruction is one of the following command:
-- all_distorted: download the Hybrid-GCNN-CNN weights, the yolact wieghts, train.json, the training cd-coco distorted images
-- all_normal: download the Hybrid-GCNN-CNN weights, the yolact weights, train.json, the train ms-coco original images
-- weight: download the Hybrid-GCNN-CNN weights, the yolact weights
+- **all_distorted**: download the Hybrid-GCNN-CNN weights, the yolact wieghts, train.json, the training cd-coco distorted images
+- **all_normal**: download the Hybrid-GCNN-CNN weights, the yolact weights, train.json, the train ms-coco original images
+- **weight**: download the Hybrid-GCNN-CNN weights, the yolact weights
 
 
 # Method
@@ -74,11 +74,11 @@ where instruction is one of the following command:
 
 Model wieghts:
 
-|Model| Hidden layer size  | Inference speed (ms) | link | 
-| ------ | :------: | :------: | :------: | :------: |
-| **GCN** | 1024 | 0.470 | xxx |
-| **GIN** | 1024 | 0.123 | xxx |
-| **GINLAF** | 32 | 0.110 | xxx |
+|Model| Hidden layer size  | Inference speed (ms) | Precision | link | 
+| ------ | :------: | :------: | :------: | :------: |  :------: |
+| **GCN** | 1024 | 0.470 | 88.9% | xxx |
+| **GIN** | 1024 | 0.123 | 90.6% | xxx |
+| **GINLAF** | 32 | 0.110 | 92.0% | xxx |
 
 
 # Instructions for use
