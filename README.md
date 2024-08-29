@@ -10,6 +10,10 @@ The repository includes:
 -  Evaluation on CD-COCO dataset
 
 # Installation
-Follow the instruction below:
+To install the YOLACT framework follow the instructions described on the official page: https://github.com/dbolya/yolact
+
+To install the Hybrid-GCNN-CNN framework, follow the instruction below:
+      ```
 pip install -r requirements.txt
+      ```
 
