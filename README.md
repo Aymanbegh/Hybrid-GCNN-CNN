@@ -51,7 +51,11 @@ The tree should look like this:
                 └── train.json
                 └── trainings.txt
                 └── train2017_distorted
+                      └── image 1
+                      └── ...
                 └── train2017
+                      └── image 1
+                      └── ...
           └── yolact
             └── yolact tree...              
          ```  
