@@ -77,7 +77,8 @@ where instruction is one of the following command:
 
 
 # Method
-
+The overall architecture of our new Lightweight Hybrid Graph Convolutional Neural Network - CNN Scheme (LH-G2CNN) is illustrated in figure below. The proposed model consists
+of a CNN object detection model that conveys semantic and spatial information to a GCNN model for boosting the scene classification process.
 
 Model information without yolact inference by directly using groundtruth from the cd-coco dataset (bounding boxes and labels):
 
