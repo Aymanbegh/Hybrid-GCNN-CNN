@@ -112,13 +112,13 @@ Where "model_name" is GCN, GIN or GINLAF. You can adjust nb_label and hidden_cha
 Command for evaluation without yolact object detection model:
 
 ```
-python  evaluate.py --dataset=./data/train.json --file_res="./data/trainings.txt" --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden=1024
+python  evaluate.py --dataset=./data/train.json --file_res="./data/trainings.txt" --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden=1024 --object_detection=False
 ```
 
 Command for training with yolact object detection model:
 
 ```
-python  evaluate.py --dataset=./data/train.json --trained_model=./weights/yolact_im700_54_800000.pth --score_threshold=0.15 --top_k=15 --image_dir="./data/train2017_distorted/" --file_res="./datat/trainings.txt" --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden=1024
+python  evaluate.py --dataset=./data/train.json --trained_model=./weights/yolact_im700_54_800000.pth --score_threshold=0.15 --top_k=15 --image_dir="./data/train2017_distorted/" --file_res="./datat/trainings.txt" --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden=1024 --object_detection=True
 ```
 
 **Inference commands**
