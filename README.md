@@ -56,8 +56,7 @@ The tree should look like this:
                 └── train2017
                       └── image 1
                       └── ...
-          └── yolact
-            └── yolact tree...              
+          └── yolact files...              
          ```  
 
 To install the Hybrid-GCNN-CNN framework, follow the instruction below:
@@ -67,13 +66,14 @@ pip install -r requirements.txt
 
 To download the Hybrid-GCNN-CNN data and weights, follow the instruction below:
       ```
-python installation.py {instruction}
+python preparation.py {instruction}
       ```
 
 where instruction is one of the following command:
 - **all_distorted**: download the yolact weights, train.json from the cd-coco dataset, the training cd-coco distorted images -> for training or evaluation
 - **all_normal**: download the yolact weights from the cd-coco dataset, train.json, the train ms-coco original images -> for training or evaluation
-- **weight**: download the yolact weights (yolact_im700_54_800000.pth by default) -> for inference
+
+**Important**: You have to download manually the yolact weights (yolact_im700_54_800000.pth by default) -> for inference, or evaluation
 
 
 # Method
@@ -112,7 +112,7 @@ Where "model_name" is GCN, GIN or GINLAF. You can adjust nb_label and hidden_cha
 Command for evaluation without yolact object detection model:
 
 ```
-python  evaluate.py --dataset=./data/train.json --file_res="./datat/trainings.txt" --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden=1024
+python  evaluate.py --dataset=./data/train.json --file_res="./data/trainings.txt" --gcn_model="./weights/model2_{model_name}_X2_1.pth" --nb_label=1 --model="model_name" --hidden=1024
 ```
 
 Command for training with yolact object detection model:
