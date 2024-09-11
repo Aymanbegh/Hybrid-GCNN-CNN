@@ -3,6 +3,7 @@ import requests
 import sys
 from zipfile import ZipFile
 from tqdm import tqdm
+import gdown
 
 import subprocess
 import torch
@@ -67,10 +68,27 @@ def unzip_file(zip_path, extract_to):
         print(f"Content extract in : {extract_to}")
 
 
+def download_weights_from_drive(file_id, output_dir, output_filename):
+    # Créer le dossier de sortie s'il n'existe pas
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # Chemin complet du fichier de sortie
+    output_path = os.path.join(output_dir, output_filename)
+
+    # URL directe pour gdown à partir de l'ID du fichier Google Drive
+    url = f"https://drive.google.com/uc?id={file_id}"
+
+    # Télécharger le fichier
+    gdown.download(url, output_path, quiet=False)
+
+    print(f"Fichier téléchargé et sauvegardé sous {output_path}")
+
 def main(mode):
     # Définir les chemins
     current_directory = os.getcwd()
     base_dir = current_directory + '/data'
+    model_path = current_directory + '/weights'
     json_file_url = 'https://www.l2ti.univ-paris13.fr/VSQuad/CD-COCO_ICIP2023_Challenge/train_annotations/train.json'
     if mode == 'all_normal':
         zip_file_url = 'http://images.cocodataset.org/zips/train2017.zip'
@@ -99,6 +117,14 @@ def main(mode):
     # Décompresser le fichier ZIP
     print(f'print dezip coco file : {extracted_dir}')
     unzip_file(zip_file_path, extracted_dir)
+
+    # Exemple d'utilisation :
+    file_id = '1bzO6M9YVeCr1XDJtFLpFiwOGIt9OTD_T'  # Remplacer par votre ID de fichier Google Drive
+    output_dir = model_path  # Le dossier où vous souhaitez sauvegarder le fichier
+    output_filename = 'model2_GIN_X2_1.pt'  # Le nom sous lequel sauvegarder le fichier
+
+    # Télécharger le fichier
+    download_weights_from_drive(file_id, output_dir, output_filename)
 
 
 
