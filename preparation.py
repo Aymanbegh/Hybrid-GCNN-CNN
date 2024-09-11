@@ -128,6 +128,14 @@ def main(mode):
     # Télécharger le fichier
     download_weights_from_drive(file_id, output_dir, output_filename)
 
+    # Exemple d'utilisation :
+    file_id = '1lE4Lz5p25teiXV-6HdTiOJSnS7u7GBzg'  # Remplacer par votre ID de fichier Google Drive
+    output_dir = model_path  # Le dossier où vous souhaitez sauvegarder le fichier
+    output_filename = 'yolact_im700_54_800000.pt'  # Le nom sous lequel sauvegarder le fichier
+
+    # Download yolact model weight
+    download_weights_from_drive(file_id, output_dir, output_filename)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
