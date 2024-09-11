@@ -22,6 +22,7 @@ sparse_install_command = f"pip install -q torch-sparse -f https://data.pyg.org/w
 subprocess.run(sparse_install_command, shell=True, check=True)
 print("torch-sparse installé avec succès.")
 
+
 def download_file(url, destination_path):
     """Télécharge un fichier depuis une URL en affichant une barre de progression."""
     response = requests.get(url, stream=True)
@@ -84,6 +85,7 @@ def download_weights_from_drive(file_id, output_dir, output_filename):
 
     print(f"Fichier téléchargé et sauvegardé sous {output_path}")
 
+
 def main(mode):
     # Définir les chemins
     current_directory = os.getcwd()
@@ -125,7 +127,6 @@ def main(mode):
 
     # Télécharger le fichier
     download_weights_from_drive(file_id, output_dir, output_filename)
-
 
 
 if __name__ == "__main__":
