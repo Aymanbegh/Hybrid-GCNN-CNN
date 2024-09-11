@@ -1,0 +1,10 @@
+torchvision
+torch
+dgl
+torch-geometric
+cython
+opencv-python 
+pillow 
+pycocotools 
+matplotlib
+numpy
