@@ -28,8 +28,7 @@ git clone https://github.com/Aymanbegh/Hybrid-GCNN-CNN.git
 cd Hybrid-GCNN-CNN
 ```
 
-To install the YOLACT framework follow the instructions described on the official page: https://github.com/dbolya/yolact
-Clone its repository into the Hybrid-GCNN-CNN folder and enter it:
+The YOLACT framework is already integrated into the repository. To install the YOLACT ++ framework follow the instructions described on the official page: https://github.com/dbolya/yolact :
 
 The tree should look like this:
 
@@ -64,7 +63,7 @@ To install the Hybrid-GCNN-CNN framework, follow the instruction below:
 pip install -r requirements.txt
       ```
 
-To download the Hybrid-GCNN-CNN data and weights, follow the instruction below:
+To download the Hybrid-GCNN-CNN data, follow the instruction below:
       ```
 python preparation.py {instruction}
       ```
