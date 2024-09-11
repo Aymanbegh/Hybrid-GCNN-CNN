@@ -101,7 +101,7 @@ python  train.py --dataset=./data/train.json --file_res="./data/trainings.txt" -
 Command for training with yolact object detection model:
 
 ```
-python  training.py --dataset=./data/train.json --trained_model=./weights/yolact_im700_54_800000.pth --score_threshold=0.15 --top_k=15 --image_dir="./data/train2017_distorted/" --file_res="./data/trainings.txt" --nb_label=1 --model="model_name" --hidden=1024
+python  train.py --dataset=./data/train.json --trained_model=./weights/yolact_im700_54_800000.pth --score_threshold=0.15 --top_k=15 --image_dir="./data/train2017_distorted/" --file_res="./data/trainings.txt" --nb_label=1 --model="model_name" --hidden=1024
 ```
 
 Where "model_name" is GCN, GIN or GINLAF. You can adjust nb_label and hidden_channel parameters
