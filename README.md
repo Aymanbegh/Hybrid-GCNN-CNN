@@ -145,10 +145,12 @@ python  inference.py --trained_model=./weights/yolact_im700_54_800000.pth --scor
 **Hybrid-GCNN-CNN: A New Lightweight Hybrid Graph Convolutional Neural Network--CNN Scheme for Scene Classification using Object Detection Inference**
 
 ```
-@article{beghdadi2024new,
-  title={A New Lightweight Hybrid Graph Convolutional Neural Network--CNN Scheme for Scene Classification using Object Detection Inference},
+@inproceedings{beghdadi2024new,
+  title={A New Lightweight Hybrid Graph Convolutional Neural Network-CNN Scheme for Scene Classification Using Object Detection Inference},
   author={Beghdadi, Ayman and Beghdadi, Azeddine and Ullah, Mohib and Cheikh, Faouzi Alaya and Mallem, Malik},
-  journal={arXiv preprint arXiv:2407.14658},
-  year={2024}
+  booktitle={2024 12th European Workshop on Visual Information Processing (EUVIP)},
+  pages={1--6},
+  year={2024},
+  organization={IEEE}
 }
 ```
